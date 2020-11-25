@@ -2,17 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点击" />
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#00000000"
+        />
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-100dp">
+
+
+
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:text="吃泡面对健康有影响吗?"
+                android:textSize="18dp"
+                android:textColor="#272727"
+                android:id="@+id/articleTitle"
+                android:lines="2"
+                android:ellipsize="end"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#BEBEBE"
+                android:text="123"
+                android:gravity="top"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Author"
+                android:textSize="13dp"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="8"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+
+            android:id="@+id/picture"
+            android:orientation="horizontal"/>
+
+
+
+
+    </LinearLayout>
+
+
 </LinearLayout>
